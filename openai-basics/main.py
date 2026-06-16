@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 def main():
     load_dotenv()
 
+    #read api key from env file.
     openai_api_key = os.getenv("OPENAI_API_KEY")
     if not openai_api_key:
         raise ValueError("OPENAI_API_KEY environment variable is not set.")
